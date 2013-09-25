@@ -19,6 +19,9 @@
 		3B482C1817F2810F00FA499F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B482C0017F2810E00FA499F /* UIKit.framework */; };
 		3B482C2017F2810F00FA499F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B482C1E17F2810F00FA499F /* InfoPlist.strings */; };
 		3B482C2217F2810F00FA499F /* Do_StoryBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B482C2117F2810F00FA499F /* Do_StoryBoardTests.m */; };
+		3B482C2C17F2813B00FA499F /* Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B482C2B17F2813B00FA499F /* Storyboard_iPhone.storyboard */; };
+		3B482C3317F2888C00FA499F /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B482C3217F2888C00FA499F /* MyTableViewController.m */; };
+		3B482C3617F28D5D00FA499F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B482C3517F28D5D00FA499F /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		3B482C1D17F2810F00FA499F /* Do_StoryBoardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Do_StoryBoardTests-Info.plist"; sourceTree = "<group>"; };
 		3B482C1F17F2810F00FA499F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B482C2117F2810F00FA499F /* Do_StoryBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Do_StoryBoardTests.m; sourceTree = "<group>"; };
+		3B482C2B17F2813B00FA499F /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3B482C3117F2888C00FA499F /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		3B482C3217F2888C00FA499F /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		3B482C3417F28D5D00FA499F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3B482C3517F28D5D00FA499F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,14 @@
 		3B482C0217F2810E00FA499F /* Do_StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3B482C3017F285D800FA499F /* iPad */,
 				3B482C0B17F2810E00FA499F /* AppDelegate.h */,
 				3B482C0C17F2810E00FA499F /* AppDelegate.m */,
+				3B482C3117F2888C00FA499F /* MyTableViewController.h */,
+				3B482C3217F2888C00FA499F /* MyTableViewController.m */,
+				3B482C3417F28D5D00FA499F /* DetailViewController.h */,
+				3B482C3517F28D5D00FA499F /* DetailViewController.m */,
+				3B482C2B17F2813B00FA499F /* Storyboard_iPhone.storyboard */,
 				3B482C0E17F2810E00FA499F /* Images.xcassets */,
 				3B482C0317F2810E00FA499F /* Supporting Files */,
 			);
@@ -142,6 +156,13 @@
 				3B482C1E17F2810F00FA499F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B482C3017F285D800FA499F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B482C0717F2810E00FA499F /* InfoPlist.strings in Resources */,
+				3B482C2C17F2813B00FA499F /* Storyboard_iPhone.storyboard in Resources */,
 				3B482C0F17F2810E00FA499F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B482C3317F2888C00FA499F /* MyTableViewController.m in Sources */,
 				3B482C0D17F2810E00FA499F /* AppDelegate.m in Sources */,
 				3B482C0917F2810E00FA499F /* main.m in Sources */,
+				3B482C3617F28D5D00FA499F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +386,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Do_StoryBoard/Do_StoryBoard-Prefix.pch";
 				INFOPLIST_FILE = "Do_StoryBoard/Do_StoryBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,7 +401,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Do_StoryBoard/Do_StoryBoard-Prefix.pch";
 				INFOPLIST_FILE = "Do_StoryBoard/Do_StoryBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
